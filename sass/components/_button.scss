@@ -1,0 +1,77 @@
+.button {
+
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 200px;
+    color: var(--color-third);
+    background-color: var(--color-acсent);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+
+
+    transition: background-color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: var(--button-background);
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    }
+}
+
+.buttons {
+    &__list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        margin-right: 8px;
+
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__nav {
+        color: var(--color-basic);
+        background-color: #F5F4FA;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        font-family: inherit;
+        display: inline-block;
+        border-radius: 4px;
+        padding: 6px 22px;
+        border: none;
+
+        transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function), box-shadow var(--duration) var(--timing-function);
+    }
+
+    &__nav.current {
+        color: var(--color-third);
+        background-color: var(--color-acсent);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &__nav:hover,
+    &__nav:focus,
+    &__nav:active {
+        color: #fff;
+        background-color: var(--color-acсent);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+}

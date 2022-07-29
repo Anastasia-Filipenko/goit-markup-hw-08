@@ -1,0 +1,43 @@
+
+
+.features {
+  
+    &__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+}
+    &__item {
+    margin-right: 30px;
+    width: 270px;
+}
+    &_item:last-child {
+    margin-right: 0;
+}
+    &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--color-basic);
+    margin-bottom: 10px;
+
+}
+
+    &__text {
+    font-size: 14px;
+    line-height: 1.71;
+
+}
+    &__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+}
+}
+
