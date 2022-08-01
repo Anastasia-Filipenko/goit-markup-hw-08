@@ -5,6 +5,42 @@
 
 
 .menu{
+
+        &__img {
+                width: 100%;
+            }
+@media(max-width:767px){
+
+    &__item:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+@media (min-width:768px) and (max-width:1199px){
+    &__list {
+            display: flex;
+            flex-wrap: wrap;
+        
+            padding: 0;
+            margin: 0;
+            gap: 30px;
+    
+        }
+        &__link{
+           display:block;
+        }
+    &__list &__item {
+        flex-basis: calc((100% - 60px) / 2);
+        display: block;
+    }
+        &__list:nth-child(2n) {
+            margin-right: 0;
+        }
+
+  
+}
+@media(min-width:1200px) {
+    
+
 &__list {
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +57,7 @@
 
 &__list:nth-child(3n) {
     margin-right: 0;
-}
+}}
     &__link {
     display: block;
     transition:
@@ -44,12 +80,14 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--color-second);
 }
-}
 
+}
 
 .img-container {
     position: relative;
     overflow: hidden;
+
+
 }
 
 .card-info {

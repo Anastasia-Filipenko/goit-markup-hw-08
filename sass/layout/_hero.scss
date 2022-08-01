@@ -1,7 +1,44 @@
+
+
+
+
+
 .hero {
+
+    @media (max-width:767px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/mobile-hero.jpg');
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi){
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/mobile-hero@2x.jpg')
+        }
+    }
+
+    @media (max-width:1199px){
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/tablet-hero.jpg');
+            
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 2dppx),
+                (min-resolution: 192dpi) {
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url('../images/tablet-hero@2x.jpg')
+                }
+    }
+
+    @media (min-width:1200px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero.jpg');
+         @media (min-device-pixel-ratio: 2),
+          (min-resolution: 2dppx),
+          (min-resolution: 192dpi) {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                  url('../images/hero@2x.jpg')
+          }
+    }
     padding: 200px 0;
     text-align: center;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,8 +46,14 @@
     margin-left: auto;
     margin-right: auto;
     background-color: #2f303a;
+
+         
     
     &__title {
+        @media (max-width:767px){
+            font-size: 26px;
+            line-height: 1.66;
+        }
     color: var(--color-third);
     font-weight: 900;
     font-size: 44px;

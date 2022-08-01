@@ -17,4 +17,14 @@
     &--white {
         color: var(--color-third);
     }
+
+    
+}
+
+.header__logo{
+    @media screen and (max-width: 767px){
+        position: absolute;
+        left: 15px;
+        top: 16px;
+    }
 }

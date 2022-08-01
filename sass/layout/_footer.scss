@@ -2,29 +2,43 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
-    
+
+        & .logo {
+                margin-bottom: 20px;
+                margin-right: 0;
+                display: block;
+        
+            }
+
+
+    @media (min-width:768px) and (max-width:1199px){
+
+              &__communications{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+              }
+        }
+    @media (min-width:1200px)
+    {
+   
+    &__communications{
+        display: flex;
+            align-items: baseline;
+    }
     &__container {
     display: flex;
     align-items: baseline;
 }
-    & .logo {
-    margin-bottom: 20px;
-    margin-right: 0;
-    display: block;
 
-}
-
+    }
 }
 
 .contacts {
-    font-style: normal;
-    margin-right: 70px;
+    text-align: center;
+    margin-bottom: 60px;
 
-    &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+
 
 &__item {
     margin-bottom: 9px;
@@ -53,10 +67,28 @@
     text-decoration: none;
     display: inline-block;
 }
-
+@media (min-width:768px) and (max-width:1199px){
+    text-align: center;
+    
+}
+        @media (min-width:1200px) {
+            font-style: normal;
+            margin-right: 70px;
+        }
+    
+        &__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 }
 
 .social{
+    
+    @media (max-width: 767px){
+        text-align: center;
+        margin-bottom: 60px;
+    }
     &__title {
     font-size: 14px;
     line-height: 1.14;
@@ -97,12 +129,32 @@
     background-color: var(--color-acсent);
 }
 
+
 }
 
-
 .subscription {
+    @media (min-width:768px) and (max-width:1199px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__input{
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (min-width:1200px){
     margin-left: auto;
-    
+    &__form {
+    display: flex;
+
+}
+    }
     &__title {
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -113,10 +165,7 @@
 
 }
 
-&__form {
-    display: flex;
 
-}
 
 &__input {
     width: 358px;
@@ -162,5 +211,27 @@
 &__icon {
     margin-left: 10px;
 }
+
+        @media (max-width:767px) {
+            &__title {
+                text-align: center;
+            }
+    
+            &__input {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+    
+            &__button {
+                margin: 0;
+                text-align: center;
+            }
+
+            &__form{
+                display: flex;
+                    align-items: center;
+                    flex-direction: column;
+            }
+        }
 }
 
