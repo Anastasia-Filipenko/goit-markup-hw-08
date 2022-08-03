@@ -63,9 +63,9 @@
             <span class="logo--blue">Web</span><span class="logo--black">Studio</span>
           </a>
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link current" href="./index.html">Студия</a></li>
-            <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link current" href="./index.html">Студія</a></li>
+            <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contact__list">
@@ -160,8 +160,8 @@
           <ul class="activity__list">
             <li class="activity__item">
               <div class="activity__overlay"><img
-                srcset="./images/activity_1.jpg 1x, ./images/activity_1@2.jpg 2x "
-                src="./images/activity_1.jpg"
+                srcset="./images/activity/activity_1.jpg 1x, ./images/activity/activity_1@2.jpg 2x "
+                src="./images/activity/activity_1.jpg"
                 alt="Людина займається кодуванням майбутнього додатку будущего"
                 width="370"
               />
@@ -169,8 +169,8 @@
             </li>
             <li class="activity__item">
               <div class="activity__overlay"><img
-                srcset="./images/activity_2.jpg 1x, ./images/activity_2@2.jpg 2x "
-                src="./images/activity_2.jpg"
+                srcset="./images/activity/activity_2.jpg 1x, ./images/activity/activity_2@2.jpg 2x "
+                src="./images/activity/activity_2.jpg"
                 alt="Дизайнер вибирає оптимальний дизайн і оцінює його якість на девайсі"
                 width="370"
               />
@@ -178,8 +178,8 @@
             </li>
             <li class="activity__item">
               <div class="activity__overlay"><img
-                srcset="./images/activity_1.jpg 1x, ./images/activity_1@2.jpg 2x "
-                src="./images/activity_3.jpg"
+                srcset="./images/activity/activity_1.jpg 1x, ./images/activity/activity_1@2.jpg 2x "
+                src="./images/activity/activity_3.jpg"
                 alt="Графічний дизайнер вибирає колір із кольорової палітри"
                 width="370"
               />
@@ -196,9 +196,14 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img class="team__img" 
-              srcset="./images/team_1.jpg 1x, ./images/team_1@2.jpg 2x "
-              src="./images/team_1.jpg" alt="Фото Игоря Демяненко"  />
+              <picture>
+                <source srcset="./images/team/mobile-team_1.jpg 1x, ./images/team/mobile-team_1@2.jpg 2x" media="(max-width:767px)">
+                <source srcset="./images/team/tablet-team_1.jpg 1x, ./images/team/tablet-team_1@2.jpg 2x" media="(max-width:1199px)">
+                <source srcset="./images/team/desktop-team_1.jpg 1x, ./images/team/desktop-team_1@2.jpg 2x" media="(min-width:1200px)">
+              
+                <img class="team__img" 
+              src="./images/team/mobile-team_1.jpg" alt="Фото Игоря Демяненко"  />
+            </picture>
               <div class="team-container">
                 <h3 class="team-container__title">Игорь Демьяненко</h3>
                 <p class="team-container__text">Product Designer</p>
@@ -235,9 +240,14 @@
               </div>
             </li>
             <li class="team__card">
+              <picture>
+                <source srcset="./images/team/mobile-team_2.jpg 1x, ./images/team/mobile-team_2@2.jpg 2x" media="(max-width:767px)">
+                <source srcset="./images/team/tablet-team_2.jpg 1x, ./images/team/tablet-team_2@2.jpg 2x" media="(max-width:1199px)">
+                <source srcset="./images/team/desktop-team_2.jpg 1x, ./images/team/desktop-team_2@2.jpg 2x" media="(min-width:1200px)">
               <img class="team__img"
-              srcset="./images/team_2.jpg 1x, ./images/team_2@2.jpg 2x "
-              src="./images/team_2.jpg" alt="Фото Ольги Репиной"  />
+             
+              src="./images/team/mobile-team_2.jpg" alt="Фото Ольги Репиной"  />
+            </picture>
               <div class="team-container">
                 <h3 class="team-container__title">Ольга Репина</h3>
                 <p class="team-container__text">Frontend Developer</p>
@@ -274,9 +284,14 @@
               </div>
             </li>
             <li class="team__card">
+              <picture>
+                 <source srcset="./images/team/mobile-team_3.jpg 1x, ./images/team/mobile-team_3@2.jpg 2x" media="(max-width:767px)">
+                <source srcset="./images/team/tablet-team_3.jpg 1x, ./images/team/tablet-team_3@2.jpg 2x" media="(max-width:1199px)">
+                <source srcset="./images/team/desktop-team_3.jpg 1x, ./images/team/desktop-team_3@2.jpg 2x" media="(min-width:1200px)">
               <img class="team__img" 
-              srcset="./images/team_3.jpg 1x, ./images/team_3@2.jpg 2x "
-              src="./images/team_3.jpg" alt="Фото Николая Тарасова"  />
+             
+              src="./images/team/mobile-team_3.jpg" alt="Фото Николая Тарасова"  />
+            </picture>
               <div class="team-container">
                 <h3 class="team-container__title">Николай Тарасов</h3>
                 <p class="team-container__text">Marketing</p>
@@ -313,9 +328,13 @@
               </div>
             </li>
             <li class="team__card">
+              <picture>
+                 <source srcset="./images/team/mobile-team_4.jpg 1x, ./images/team/mobile-team_4@2.jpg 2x" media="(max-width:767px)">
+                <source srcset="./images/team/tablet-team_4.jpg 1x, ./images/team/tablet-team_4@2.jpg 2x" media="(max-width:1199px)">
+                <source srcset="./images/team/desktop-team_4.jpg 1x, ./images/team/desktop-team_4@2.jpg 2x" media="(min-width:1200px)">
               <img class="team__img" 
-              srcset="./images/team_4.jpg 1x, ./images/team_4@2.jpg 2x "
-              src="./images/team_4.jpg" alt="Фото Михаила Ермакова"  />
+              
+              src="./images/team/team_4.jpg" alt="Фото Михаила Ермакова"  /></picture>
               <div class="team-container">
                 <h3 class="team-container__title">Михаил Ермаков</h3>
                 <p class="team-container__text">UI Designer</p>
@@ -458,10 +477,10 @@
         </ul>
       </div></div>
       <div class="subscription">
-        <h2 class="subscription__title">Підпишіться на розсилку</h2>
+        <div class="subscription__container"><h2 class="subscription__title">Підпишіться на розсилку</h2>
         <form  class="subscription__form">
           <label for="email" class="visually-hidden" >Пошта</label>
-          <input class="subscription__input" name="email" type="email" id="email" placeholder="E-mail" required>
+          <input class="subscription__input" name="email" type="email" id="email" placeholder="E-mail" required></div>
           <button class="subscription__button" type="submit">
 Підписатися
             <svg class="subscription__icon" width="24px" height="24px">
@@ -529,7 +548,7 @@
             </svg>
            </div>
           
-             <label for="checkbox">Погоджуюся з розсилкою та приймаю 
+             <label class="contract__label" for="checkbox">Погоджуюся з розсилкою та приймаю 
               <a class="contract" href="">Умови договору</a> </label>
           </div>
           <button class="modal-button" type="submit">Відправити</button>

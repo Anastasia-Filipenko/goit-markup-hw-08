@@ -17,15 +17,15 @@
 
 .modal {
     @media (max-width:767px){
-        max-width: 390px;
+        
     
     }
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    // min-width: 528px;
-    // min-height: 581px;
+    width:100%;
+    max-width:581px;
     padding: 40px;
     background-color: var(--color-third);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -66,11 +66,8 @@
 }
 
 .form {
-    @media( max-width: 767px){
-        width:320px;
-    }
-    width: 448px;
-
+    width:100%;
+    
 }
 
 .form__title {
@@ -178,6 +175,15 @@
 .contract {
     color: var(--color-acсent);
     text-decoration-line: underline;
+
+    @media (max-width:767px){
+        &__label{
+            font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+        }
+    }
 }
 
 .modal-button {
