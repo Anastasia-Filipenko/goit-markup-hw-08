@@ -515,11 +515,22 @@ input:focus + .modal-icon {
   overflow: hidden;
   z-index: 100;
 }
+.mobile-menu__case {
+  height: 50vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .mobile-menu.is-hidden {
   display: block;
-}
-.mobile-menu__list {
-  margin-bottom: 302px;
 }
 .mobile-menu__link {
   font-weight: 500;
@@ -586,6 +597,17 @@ input:focus + .modal-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 @media (min-width: 1200px) {
   .nav {
@@ -1616,6 +1638,11 @@ input:focus + .modal-icon {
   font-size: 18px;
   line-height: 1.6;
   padding: 64px 24px;
+}
+@media (max-width: 767px) {
+  .info-text {
+    font-size: 15px;
+  }
 }
 
 .menu-container {
